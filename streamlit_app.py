@@ -72,8 +72,8 @@ if streamlit.button('add a Fruit to the list'):
 
       
 #New section to display Fruityvice API responsse
-fruit_choice = streamlit.text_input('What fruit would you like to add?','jackfruit')
-streamlit.write('Thanks for adding ', fruit_choice)
+#fruit_choice = streamlit.text_input('What fruit would you like to add?','jackfruit')
+#streamlit.write('Thanks for adding ', fruit_choice)
 
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
